@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>COMISSIONS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="">ОБО МНЕ</a>
+            <!-- <input type="radio" name="aboutme" id="aboutme"> -->
+          </li>
+          <li class="divider">\\</li>
+          <li class="nav-item"><a href="">условия работы</a></li>
+          <li class="divider">\\</li>
+          <li class="nav-item"><a href="">цена</a></li>
+          <li class="divider">\\</li>
+          <li class="nav-item"><a href="">МОИ ПРОЕКТЫ</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <nav class="prices-nav">
+          <button
+            class="prices-nav__btn btn-hover"
+            onclick="setActiveTab(this,sketchPrice)"
+          >
+            СКЕТЧ
+          </button>
+          <button
+            class="prices-nav__btn btn-hover"
+            onclick="setActiveTab(this, colorPrice)"
+          >
+            ЦВЕТ
+          </button>
+          <button
+            class="prices-nav__btn btn-hover"
+            onclick="setActiveTab(this, fullshadePrice)"
+          >
+            ФУЛЛШЕЙД
+          </button>
+        </nav>
+
+        <div class="pricelist">
+          <div class="ref">
+            <img src="/img/char-0 1.png" alt="" class="ref__img" />
+
+            <div class="ref-block">
+              <div class="price-tag price-tag--right" id="headPrice">
+                300 р.
+              </div>
+            </div>
+
+            <div class="ref-block">
+              <div class="price-tag price-tag--left" id="">
+                + персонаж<br />+ 100% цены
+              </div>
+            </div>
+
+            <div class="ref-block">
+              <div class="price-tag price-tag--right" id="halfPrice">
+                600 р.
+              </div>
+            </div>
+
+            <div class="ref-block">
+              <div class="price-tag price-tag--left --hidden" id="">опа</div>
+            </div>
+
+            <div class="ref-block">
+              <div class="price-tag price-tag--right" id="fullbodyPrice">
+                900 р.
+              </div>
+            </div>
+
+            <div class="ref-block">
+              <div class="price-tag price-tag--left" id="">
+                ФОН от 0 до 200 р.
+              </div>
+            </div>
+          </div>
+
+          <div class="donots">
+            <div class="donots-window">
+              <div class="donots-window__head donots--green">РИСУЮ</div>
+              <div class="donots-window__body">
+                <ul>
+                  <li>ос\канон</li>
+                  <li>Чтото</li>
+                  <li>Чтото</li>
+                </ul>
+              </div>
+            </div>
+            <div class="donots-window">
+              <div class="donots-window__head donots--red">НЕ РИСУЮ</div>
+              <div class="donots-window__body">
+                <ul>
+                  <li>запрещенку</li>
+                  <li>сложную меху</li>
+                  <li>фурри (не умею :<)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="blinkies">
+          <div class="blinkies-line" id="blinkies-line">
+            <img
+              src="https://adriansblinkiecollection.neocities.org/c54.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/c39.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/d42.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/d42.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/d42.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/d42.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+
+            <!-- копия -->
+            <img
+              src="https://adriansblinkiecollection.neocities.org/c54.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/c39.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/d42.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/d42.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/d42.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+            <img
+              src="https://adriansblinkiecollection.neocities.org/d42.gif"
+              alt="blinkie1"
+              class="blinkies__img"
+            />
+          </div>
+        </section>
+        <section class="terminal">
+          <div class="terminal-text" id="terminal-text">
+            <p class="terminal-line">
+              Последнее обновление прайс-листа 2025-03-13
+            </p>
+            <p class="terminal-line"></p>
+          </div>
+          <form id="terminal-form">
+            <input type="text" class="terminal-input" id="terminal-input" />
+          </form>
+        </section>
+      </div>
+      <footer>
+        <p>Последнее обновление прайс-листа 2025-03-13</p>
+      </footer>
+      <!-- ================================================================================================================================= -->
+      <div class="socials">
+        <button class="socials-btn btn-hover"><a href=""><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="currentColor" d="m21.936 5.17l-3.03 14.185c-.226.999-.806 1.224-1.644.773l-4.545-3.352l-2.225 2.127c-.225.226-.451.452-.967.452l.355-4.675l8.478-7.704c.354-.355-.097-.484-.548-.193l-10.541 6.64l-4.546-1.386c-.999-.322-.999-1 .226-1.45L20.614 3.72c.87-.258 1.612.194 1.322 1.45"/></svg>TELEGRAM</a></button>
+        <button class="socials-btn btn-hover"><a href=""><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1024 640"><path fill="currentColor" d="M772 323q65 48 158.5 139.5T1024 576q0 27-15.5 45.5T960 640H854q-30 0-54-25q-60-64-123-123t-101-84v200q0 13-9.5 22.5T544 640H416q-23 0-66.5-35T256 512q-72-83-164-242T0 64q0-35 15.5-49.5T64 0h106q14 0 29.5 12T223 40q2 5 20 42.5t23 47.5l21 42l24.5 46.5L334 256l26 39l24 29V32q0-13 9.5-22.5T416 0h128q13 0 22.5 9.5T576 32v228q102-69 224-235q8-10 23.5-17.5T854 0h106q35 0 49.5 16t14.5 48q0 44-81.5 122.5T772 323z"/></svg>VKONTAKTE</a></button>
+        <button class="socials-btn btn-hover"><a href=""><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24"><path fill="currentColor" d="M16.785 17.974a4.729 4.729 0 0 1-1.614.346a1.755 1.755 0 0 1-1.925-1.972v-6.226h4.017V7.095H13.26V2h-2.93a.157.157 0 0 0-.143.15a6.12 6.12 0 0 1-3.935 5.389v2.583h2.024v6.536c0 2.236 1.65 5.415 6.007 5.34a5.337 5.337 0 0 0 3.463-1.17l-.962-2.854"/></svg> TUMBLR</a></button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

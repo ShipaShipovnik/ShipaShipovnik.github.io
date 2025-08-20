@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  background-color: #181818;
+}
+
+section {
+  margin: 40px 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
+.btn-hover{
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.btn-hover:hover{
+  transform: scale(1.05);
+}
+
+.wrapper {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 30px 30px;
+  width: 1200px;
+  background-color: rgb(14, 14, 14);
+  background-image: url(/img/враппер.png);
+  background-repeat: repeat;
+  background-size: 90%;
+  height: fit-content;
+}
+
+/* шапка */
+header .nav-menu {
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+
+  color: white;
+  font-size: 22px;
+
+  margin-bottom: 20px;
+}
+
+.nav-menu .nav-item {
+  text-transform: uppercase;
+}
+
+.nav-menu .nav-item a {
+  color: white;
+}
+
+/* ЦЕНА --- навигация*/
+.prices-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #000000;
+}
+
+.prices-nav__btn {
+  padding: 5px 15px;
+  min-width: 240px;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1px solid black;
+
+  background: #000000;
+  background: linear-gradient(
+    0deg,
+    rgba(85, 85, 85) 10%,
+    rgb(185, 185, 185) 50%,
+    rgb(185, 185, 185) 40%
+  );
+  font-weight: bold;
+  font-size: 22px;
+
+}
+
+.prices-nav__btn.--active {
+  background: #22f107;
+  background: linear-gradient(
+    0deg,
+    rgb(21, 247, 0) 10%,
+    rgb(34, 94, 29) 50%,
+    rgb(96, 252, 91) 40%
+  );
+
+  transform: scale(1.02); /* Легкое увеличение */
+  box-shadow: 0 0 15px rgba(34, 241, 7, 0.5); /* Свечение */
+}
+
+/* ================= */
+.pricelist {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.534);
+  width: 100%;
+  display: flex;
+}
+
+.ref {
+  width: 60%;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 2.5fr 1.5fr;
+
+  min-height: 600px;
+}
+
+.ref__img {
+  position: absolute;
+  left: 30%;
+  /* border: 1px solid green; */
+
+  display: none;
+  height: 100%;
+}
+
+.ref-block {
+  color: white;
+  /* outline: green 1px solid; */
+  align-content: end;
+  border-width: 2px;
+  border-style: none none dashed none;
+  border-color: white;
+}
+
+.price-tag {
+  background-color: yellow;
+  padding: 10px 15px;
+  color: black;
+  max-width: fit-content;
+  transition: all 0.2s ease-in-out;
+}
+
+.price-tag.--hidden {
+  display: none;
+}
+
+.price-tag:hover {
+  transform: translate(0, -5px);
+  cursor: pointer;
+}
+
+.price-tag--right {
+  border-radius: 15px 15px 0px 15px;
+  margin-right: auto;
+}
+
+.price-tag--left {
+  border-radius: 15px 15px 15px 0px;
+  margin-left: auto;
+}
+
+/*  */
+.donots {
+  width: 40%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 30px;
+}
+
+.donots-window {
+  position: relative;
+  width: auto;
+  max-height: 100%; /* Не позволит выйти за родителя */
+}
+
+.donots-window__head {
+  border: solid black 2px;
+  width: fit-content;
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  background-color: white;
+  padding: 10px;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.donots-window__head:hover {
+  transform: translate(0, -5px);
+  transform: rotate(5deg);
+  cursor: pointer;
+}
+
+.donots--green {
+  background-color: green;
+  background: linear-gradient(
+    0deg,
+    rgb(41, 138, 11) 10%,
+    rgb(93, 223, 93) 50%,
+    rgb(154, 241, 127) 40%
+  );
+}
+.donots--red {
+  background-color: rgb(209, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgb(138, 11, 11) 10%,
+    rgb(223, 93, 93) 50%,
+    rgb(241, 127, 127) 40%
+  );
+}
+
+.donots-window__body {
+  border: solid black 2px;
+  background-color: rgb(233, 233, 233);
+  padding: 30px 10px 10px 10px;
+  height: fit-content;
+  outline: 0.5px solid white;
+}
+.donots-window__body ul {
+  margin-left: 15px;
+  list-style-type: square;
+}
+/* blinkies ============================================================================ */
+.blinkies {
+  width: 100%;
+  /* background-color: #000000; */
+  position: relative;
+  width: max-content;
+  /* border: #22f107 solid 1px; */
+}
+
+.blinkies-line {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  will-change: transform;
+  animation: scroll 30s linear infinite;
+}
+.blinkies-line:hover {
+  animation-play-state: paused;
+}
+
+.blinkies__img {
+  min-height: 30px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* terminal ================================================================================================================== */
+
+.terminal {
+  border: rgb(59, 59, 59) 4px solid;
+  outline: white 1px solid;
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-text {
+  height: 100%;
+  width: 100%;
+
+  overflow: scroll;
+  overflow-x: hidden;
+  scrollbar-color: white black;
+}
+.terminal-line {
+  max-width: 100%;
+}
+
+.terminal-line.--green {
+  color: green;
+}
+
+.terminal-input {
+  width: 100%;
+  border: green 1px solid;
+  background-color: black;
+  color: white;
+  margin-bottom: auto;
+}
+/*  */
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.socials-btn {
+  padding: 10px 15px;
+  min-width: 240px;
+  color: black;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1px solid rgb(89, 197, 27);
+  outline: 1px solid black;
+
+  background: #000000;
+  background: linear-gradient(
+    0deg,
+    rgb(27, 32, 27) 20%,
+    rgb(39, 65, 33) 50%,
+    rgb(0, 0, 0) 40px
+  );
+}
+.socials-btn > a {
+  color: rgb(89, 197, 27);
+  font-size: 23px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+}
+.socials-btn a svg {
+width: 30px;
+}
+
+/* footer ================================================================================================================== */
+footer {
+  width: 100%;
+  color: grey;
+  padding: 10px;
+  text-align: center;
+}
