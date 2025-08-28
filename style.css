@@ -1,8 +1,13 @@
+@font-face {
+  font-family: "vcd_ocd";
+  src: url(/fonts/vcd_ocd.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "vcd_ocd";
 }
 
 body {
@@ -20,12 +25,16 @@ a:hover {
   cursor: pointer;
 }
 
-.btn-hover{
+.text-light {
+  color: white;
+}
+
+.btn-hover {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.btn-hover:hover{
+.btn-hover:hover {
   transform: scale(1.05);
 }
 
@@ -90,7 +99,6 @@ header .nav-menu {
   );
   font-weight: bold;
   font-size: 22px;
-
 }
 
 .prices-nav__btn.--active {
@@ -125,13 +133,24 @@ header .nav-menu {
   min-height: 600px;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .ref__img {
   position: absolute;
   left: 30%;
-  /* border: 1px solid green; */
-
-  display: none;
   height: 100%;
+  animation: float 3s infinite ease-in-out;
+  z-index: 0;
 }
 
 .ref-block {
@@ -141,6 +160,7 @@ header .nav-menu {
   border-width: 2px;
   border-style: none none dashed none;
   border-color: white;
+  z-index: 1;
 }
 
 .price-tag {
@@ -296,6 +316,7 @@ header .nav-menu {
 }
 .terminal-line {
   max-width: 100%;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .terminal-line.--green {
@@ -308,6 +329,7 @@ header .nav-menu {
   background-color: black;
   color: white;
   margin-bottom: auto;
+  font-family: "Courier New", Courier, monospace;
 }
 /*  */
 
@@ -342,7 +364,7 @@ header .nav-menu {
   gap: 10px;
 }
 .socials-btn a svg {
-width: 30px;
+  width: 30px;
 }
 
 /* footer ================================================================================================================== */
@@ -352,3 +374,63 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+/* PROJECTS ================================================================================================================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+}
+.project {
+  border: yellow 1px;
+  border-style: dashed;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #000000;
+}
+
+.project__banner{
+  min-height: 150px;
+  object-fit: fill;
+}
+.project__head {
+  margin-bottom: 10px;
+}
+.project__btn {
+  padding: 10px 10px;
+}
+.project__about{
+  flex-grow: 1;
+}
+/* -------------------------- */
+#project-wip{
+  border-color: grey;
+  background: radial-gradient(circle farthest-corner at 51% 50%, rgba(0, 0, 0, 1) 60.5%, rgb(134, 134, 131) 100%);
+}
+#project-wip .project__head h2,
+#project-wip .project__about p,
+#project-wip .project__btn a{
+  color: white;
+  text-align: center;
+}
+#project-wip .project__btn a{
+color: black;
+}
+/*-------------------------  */
+#project-hotel1316 {
+  background-color: rgb(75, 17, 15);
+}
+#project-hotel1316 .project__head h2,
+#project-hotel1316 .project__about p,
+#project-hotel1316 .project__btn a{
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: gold;
+}
+#project-hotel1316 .project__btn {
+  background-color: #000000;
+  border: gold 1px solid;
+}
+/* #project-hotel1316 .project__banner{
+} */
