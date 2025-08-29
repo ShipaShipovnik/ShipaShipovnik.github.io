@@ -1,3 +1,16 @@
+function Zaglushka(event) {
+  if (event) event.preventDefault();
+  alert("Упси! Еще не готово :P");
+}
+
+document
+  .querySelectorAll(".stub-link")
+  .forEach((link) => link.addEventListener("click", Zaglushka));
+
+
+вdocument
+
+
 const sketchPrice = {
   head: 0,
   half: 0,
