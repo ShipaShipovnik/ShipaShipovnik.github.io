@@ -8,9 +8,7 @@ document
   .forEach((link) => link.addEventListener("click", Zaglushka));
 
 
-вdocument
-
-
+// ==================================================================================================
 const sketchPrice = {
   head: 0,
   half: 0,
@@ -26,6 +24,7 @@ const colorPrice = {
   half: 500,
   fullbody: 700,
 };
+// ==================================================================================================
 
 const terminalContainer = document.getElementById("terminal-text");
 
@@ -49,6 +48,9 @@ function setActiveTab(tab, type) {
 
   changePrice(type);
 }
+
+
+
 
 // =====================================================================================================================
 
@@ -92,3 +94,7 @@ document
 
     input.value = "";
   });
+
+// ===============
+// по дефолту активна фулшейд вкладка
+setActiveTab(document.getElementById("fullshadeBtn"), fullshadePrice);

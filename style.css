@@ -400,8 +400,13 @@ footer {
 }
 
 .project__banner {
-  min-height: 150px;
+  height: 180px;
   object-fit: fill;
+  overflow: hidden;
+  object-position: center;
+}
+.project__banner img{
+  width: 100%;
 }
 .project__head {
   margin-bottom: 10px;
@@ -444,6 +449,50 @@ footer {
   background-color: #000000;
   border: gold 1px solid;
 }
+
+/* ============================================================ */
+
+#project-greengrave{
+  
+  border-color:rgb(100, 146, 40);
+}
+
+#project-greengrave {
+  background-color: rgb(29, 37, 19);
+}
+#project-greengrave .project__head h2,
+#project-greengrave .project__about p,
+#project-greengrave .project__btn a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(100, 146, 40);
+}
+#project-greengrave .project__btn {
+  background-color: #000000;
+  border: rgb(104, 104, 104) 1px solid;
+}
+
+/* ======================================= */
+
+/* #project-dmmt{
+  border-color:rgb(100, 146, 40);
+} */
+
+/* #project-dmmt {
+  background-color: rgb(29, 37, 19);
+} */
+
+#project-dmmt .project__head h2,
+#project-dmmt .project__about p,
+#project-dmmt .project__btn a {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+#project-dmmt .project__btn {
+  background-color: #000000;
+  border: rgb(104, 104, 104) 1px solid;
+}
+
+
 /* #project-hotel1316 .project__banner{
 } */
 
