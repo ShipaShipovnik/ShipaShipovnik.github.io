@@ -10,9 +10,9 @@ document
 
 // ==================================================================================================
 const sketchPrice = {
-  head: 0,
-  half: 0,
-  fullbody: 0,
+  head: 100,
+  half: 100,
+  fullbody: 100,
 };
 const fullshadePrice = {
   head: 500,
