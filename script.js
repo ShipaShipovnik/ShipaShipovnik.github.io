@@ -6,7 +6,26 @@ function Zaglushka(event) {
 document
   .querySelectorAll(".stub-link")
   .forEach((link) => link.addEventListener("click", Zaglushka));
+// ==================================================================================================
+function setTimeDate() {
+  let datetime = new Date();
 
+  document.getElementById("clockTime").innerHTML =
+    datetime.toLocaleTimeString();
+  document.getElementById("clockDate").innerHTML =
+    datetime.toLocaleDateString();
+}
+// setTimeDate()
+setInterval(setTimeDate, 1000);
+// ==================================================================================================
+// новости
+
+class NewsPost {
+  constructor(title, text) {
+    this.title = title;
+    this.text = text;
+  }
+}
 
 // ==================================================================================================
 const sketchPrice = {
@@ -48,9 +67,6 @@ function setActiveTab(tab, type) {
 
   changePrice(type);
 }
-
-
-
 
 // =====================================================================================================================
 

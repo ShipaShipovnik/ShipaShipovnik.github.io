@@ -9,361 +9,463 @@
 
   <body>
     <div class="wrapper">
-      <header class="header">
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a href="" class="stub-link">[ОБО МНЕ]</a>
-          </li>
-
-          <li class="divider">\\</li>
-
-          <li class="nav-item">
-            <a href="#" class="stub-link">[условия работы]</a>
-          </li>
-          <li class="divider">\\</li>
-          <li class="nav-item"><a href="#">[ЦЕНЫ]</a></li>
-          <li class="divider">\\</li>
-          <li class="nav-item"><a href="#projects">[МОИ ПРОЕКТЫ]</a></li>
-        </ul>
-      </header>
-
-      <div class="content">
-        <nav class="prices-nav">
-          <button
-            class="prices-nav__btn btn-hover"
-            onclick="setActiveTab(this,sketchPrice)"
-            id="sketchBtn"
-          >
-            СКЕТЧ
-          </button>
-          <button
-            class="prices-nav__btn btn-hover"
-            onclick="setActiveTab(this, colorPrice)"
-            id="colorBtn"
-          >
-            ЦВЕТ
-          </button>
-          <button
-            class="prices-nav__btn btn-hover"
-            onclick="setActiveTab(this, fullshadePrice)"
-            id="fullshadeBtn"
-          >
-            ФУЛЛШЕЙД
-          </button>
-        </nav>
-
-        <div class="pricelist">
-          <div class="ref">
-            <div class="ref__img-container">
-              <img src="/img/char-0 1.png" alt="" class="ref__img" />
-            </div>
-
-            <div class="ref-block">
-              <div class="price-tag price-tag--right" id="headPrice">
-                300 р.
-              </div>
-            </div>
-
-            <div class="ref-block">
-              <div class="price-tag price-tag--left" id="">
-                + персонаж<br />+ 100% цены
-              </div>
-            </div>
-
-            <div class="ref-block">
-              <div class="price-tag price-tag--right" id="halfPrice">
-                600 р.
-              </div>
-            </div>
-
-            <div class="ref-block">
-              <div class="price-tag price-tag--left --hidden" id="">опа</div>
-            </div>
-
-            <div class="ref-block">
-              <div class="price-tag price-tag--right" id="fullbodyPrice">
-                900 р.
-              </div>
-            </div>
-
-            <div class="ref-block">
-              <div class="price-tag price-tag--left" id="">
-                ФОН от 0 до 200 р.
-              </div>
-            </div>
-          </div>
-
-          <div class="donots">
-            <div class="yellow-tags-mobile">
-              <div class="price-tag --mobile">+ персонаж<br />+ 100% цены</div>
-              <div class="price-tag --mobile">ФОН от 0 до 200 р.</div>
-            </div>
-
-            <div class="donots-window">
-              <div class="donots-window__head donots--green">РИСУЮ</div>
-              <div class="donots-window__body">
-                <ul>
-                  <li>ос\канон</li>
-                  <li>Чтото</li>
-                  <li>Чтото</li>
-                </ul>
-              </div>
-            </div>
-            <div class="donots-window">
-              <div class="donots-window__head donots--red">НЕ РИСУЮ</div>
-              <div class="donots-window__body">
-                <ul>
-                  <li>запрещенку</li>
-                  <li>сложную меху</li>
-                  <li>фурри (не умею :<)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="sidebar text-light">
+        <div class="time border-grey-old">
+          <span class="timers" id="clockTime">Времени нет.</span> <br />
+          <span class="timers" id="clockDate">Даты несуществует....</span>
+        </div>
+        <div class="shit">
+          <img
+            src="https://sugarfantasies.neocities.org/index/gun.webp"
+            alt=""
+            class="img100"
+          />
+        </div>
+        <div class="sidebar-links">
+          <a href="" class="sidebar-links_a">
+            <li>ccskrb [ebkrb</li>
+          </a>
+          <a href="" class="sidebar-links_a">
+            <li>Мои проектики</li>
+          </a>
+          <a href="" class="sidebar-links_a">
+            <li>Мои проектики</li>
+          </a>
+          <a href="" class="sidebar-links_a">
+            <li>Мои проектики</li>
+          </a>
         </div>
 
-        <section class="blinkies">
-          <div class="blinkies-line" id="blinkies-line">
-            <img
-              src="https://adriansblinkiecollection.neocities.org/c54.gif"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://adriansblinkiecollection.neocities.org/c39.gif"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://adriansblinkiecollection.neocities.org/d42.gif"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://64.media.tumblr.com/dee04fbef2bf7b1586ab97b0ece60e6a/68e393feeeee9c91-b5/s250x400/affb79a9d195706e0106d8d145ce1efc9c90a15c.gifv"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://64.media.tumblr.com/2ef804456cb2fcd871571f24f9656af3/1fb39223b20e4f22-d2/s250x400/91ea47ae5ff4c0109a700970fc2c935f59f4b292.gifv"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://64.media.tumblr.com/88df56c50e9eefab219cd1b53e09d097/68e393feeeee9c91-52/s250x400/785161168d1cc39b246b65620410dd70387d8e73.gifv"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
+        <div
+          class="aurora-borealis"
+          style="
+            background-image: url(https://static.vecteezy.com/system/resources/previews/043/411/435/large_2x/snowfall-in-a-winter-park-at-night-with-glowing-lanterns-pavement-covered-with-snow-and-trees-vintage-film-aesthetic-photo.jpg);
+            background-position: center;          
+            background-repeat: no-repeat;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  padding: 2px;
 
-            <!-- копия ====================================================-->
-            <img
-              src="https://adriansblinkiecollection.neocities.org/c54.gif"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://adriansblinkiecollection.neocities.org/c39.gif"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://adriansblinkiecollection.neocities.org/d42.gif"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://64.media.tumblr.com/dee04fbef2bf7b1586ab97b0ece60e6a/68e393feeeee9c91-b5/s250x400/affb79a9d195706e0106d8d145ce1efc9c90a15c.gifv"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://64.media.tumblr.com/2ef804456cb2fcd871571f24f9656af3/1fb39223b20e4f22-d2/s250x400/91ea47ae5ff4c0109a700970fc2c935f59f4b292.gifv"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-            <img
-              src="https://64.media.tumblr.com/88df56c50e9eefab219cd1b53e09d097/68e393feeeee9c91-52/s250x400/785161168d1cc39b246b65620410dd70387d8e73.gifv"
-              alt="blinkie1"
-              class="blinkies__img"
-            />
-          </div>
-        </section>
-        <!-- ============================================================================= -->
-        <section class="terminal">
-          <div class="terminal-text" id="terminal-text">
-            <p class="terminal-line">
-              Последнее обновление прайс-листа 2025-03-13
-            </p>
-            <p class="terminal-line"></p>
-          </div>
-          <form id="terminal-form">
-            <input type="text" class="terminal-input" id="terminal-input" />
-          </form>
-        </section>
-        <!-- ============================================================================================= -->
-        <section class="ToS text-light section-bg">
-          <h3 class="section-h">Terms Of service</h3>
-          <p>Плейсхолдер, этот раздел скоро будет заполнен инфой!</p>
-        </section>
-        <!-- ------------------------------------------ -->
-        <section class="aboutme text-light section-bg">
-          <h3 class="section-h">About me</h3>
-          <p>
-            Люблю инди-хорроры, ОТЕЛИ, Варкрафт и рисование. Постепенно
-            развиваюсь в веб-разработке. А большего знать и не надо. Хотите
-            узнать больше, поболтайте со мной лол.
+          "
+        >
+          <p>IS THIS THE FIRST. TIME.</p>
+          <p>THAT YOU EVERSEEN</p>
+          <p
+            style="
+              font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                sans-serif;
+            "
+          >
+            AURORA BOREALIS
           </p>
+          <p><i class="">CRUSH</i> MANKIND ?</p>
+        </div>
+      </div>
+      <div class="middle">
+        <header class="header">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="" class="stub-link">[ОБО МНЕ]</a>
+            </li>
+
+            <li class="divider">\\</li>
+
+            <li class="nav-item">
+              <a href="#" class="stub-link">[условия работы]</a>
+            </li>
+            <li class="divider">\\</li>
+            <li class="nav-item"><a href="#">[ЦЕНЫ]</a></li>
+            <li class="divider">\\</li>
+            <li class="nav-item"><a href="#projects">[МОИ ПРОЕКТЫ]</a></li>
+          </ul>
+        </header>
+
+        <div class="content">
+          <section class="sitenews text-light">
+            <div class="news">
+              <h3>Обновление 02.09.2025г.</h3>
+              <p id="latest-news-txt">
+                <li class="news-li">
+                  Полностью переделана верстка, теперь сайт нормально
+                  адаптипуется под разные размеры!!
+                </li>
+                <li class="news-li">Добавлено описание проектов</li>
+              </p>
+            </div>
+          </section>
+
+          <nav class="prices-nav">
+            <button
+              class="prices-nav__btn btn-hover"
+              onclick="setActiveTab(this,sketchPrice)"
+              id="sketchBtn"
+            >
+              СКЕТЧ
+            </button>
+            <button
+              class="prices-nav__btn btn-hover"
+              onclick="setActiveTab(this, colorPrice)"
+              id="colorBtn"
+            >
+              ЦВЕТ
+            </button>
+            <button
+              class="prices-nav__btn btn-hover"
+              onclick="setActiveTab(this, fullshadePrice)"
+              id="fullshadeBtn"
+            >
+              ФУЛЛШЕЙД
+            </button>
+          </nav>
+
+          <div class="pricelist">
+            <div class="ref">
+              <div class="ref__img-container">
+                <img src="/img/char-0 1.png" alt="" class="ref__img" />
+              </div>
+
+              <div class="ref-block">
+                <div class="price-tag price-tag--right" id="headPrice">
+                  300 р.
+                </div>
+              </div>
+
+              <div class="ref-block">
+                <div class="price-tag price-tag--left" id="">
+                  + персонаж<br />+ 100% цены
+                </div>
+              </div>
+
+              <div class="ref-block">
+                <div class="price-tag price-tag--right" id="halfPrice">
+                  600 р.
+                </div>
+              </div>
+
+              <div class="ref-block">
+                <div class="price-tag price-tag--left --hidden" id="">опа</div>
+              </div>
+
+              <div class="ref-block">
+                <div class="price-tag price-tag--right" id="fullbodyPrice">
+                  900 р.
+                </div>
+              </div>
+
+              <div class="ref-block">
+                <div class="price-tag price-tag--left" id="">
+                  ФОН от 0 до 200 р.
+                </div>
+              </div>
+            </div>
+
+            <div class="donots">
+              <div class="yellow-tags-mobile">
+                <div class="price-tag --mobile">
+                  + персонаж<br />+ 100% цены
+                </div>
+                <div class="price-tag --mobile">ФОН от 0 до 200 р.</div>
+              </div>
+
+              <div class="donots-window">
+                <div class="donots-window__head donots--green">РИСУЮ</div>
+                <div class="donots-window__body">
+                  <ul>
+                    <li>ос\канон</li>
+                    <li>Чтото</li>
+                    <li>Чтото</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="donots-window">
+                <div class="donots-window__head donots--red">НЕ РИСУЮ</div>
+                <div class="donots-window__body">
+                  <ul>
+                    <li>запрещенку</li>
+                    <li>сложную меху</li>
+                    <li>фурри (не умею :<)< /li></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="blinkies">
+            <div class="blinkies-line" id="blinkies-line">
+              <img
+                src="https://adriansblinkiecollection.neocities.org/c54.gif"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://adriansblinkiecollection.neocities.org/c39.gif"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://adriansblinkiecollection.neocities.org/d42.gif"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://64.media.tumblr.com/dee04fbef2bf7b1586ab97b0ece60e6a/68e393feeeee9c91-b5/s250x400/affb79a9d195706e0106d8d145ce1efc9c90a15c.gifv"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://64.media.tumblr.com/2ef804456cb2fcd871571f24f9656af3/1fb39223b20e4f22-d2/s250x400/91ea47ae5ff4c0109a700970fc2c935f59f4b292.gifv"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://64.media.tumblr.com/88df56c50e9eefab219cd1b53e09d097/68e393feeeee9c91-52/s250x400/785161168d1cc39b246b65620410dd70387d8e73.gifv"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+
+              <!-- копия ====================================================-->
+              <img
+                src="https://adriansblinkiecollection.neocities.org/c54.gif"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://adriansblinkiecollection.neocities.org/c39.gif"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://adriansblinkiecollection.neocities.org/d42.gif"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://64.media.tumblr.com/dee04fbef2bf7b1586ab97b0ece60e6a/68e393feeeee9c91-b5/s250x400/affb79a9d195706e0106d8d145ce1efc9c90a15c.gifv"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://64.media.tumblr.com/2ef804456cb2fcd871571f24f9656af3/1fb39223b20e4f22-d2/s250x400/91ea47ae5ff4c0109a700970fc2c935f59f4b292.gifv"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+              <img
+                src="https://64.media.tumblr.com/88df56c50e9eefab219cd1b53e09d097/68e393feeeee9c91-52/s250x400/785161168d1cc39b246b65620410dd70387d8e73.gifv"
+                alt="blinkie1"
+                class="blinkies__img"
+              />
+            </div>
+          </section>
+          <!-- ============================================================================= -->
+          <section class="terminal">
+            <div class="terminal-text" id="terminal-text">
+              <p class="terminal-line">
+                Последнее обновление прайс-листа 2025-03-13
+              </p>
+              <p class="terminal-line"></p>
+            </div>
+            <form id="terminal-form">
+              <input type="text" class="terminal-input" id="terminal-input" />
+            </form>
+          </section>
+          <!-- ============================================================================================= -->
+          <section class="ToS text-light section-bg">
+            <h3 class="section-h">Terms Of service</h3>
+            <p>Плейсхолдер, этот раздел скоро будет заполнен инфой!</p>
+          </section>
+          <!-- ------------------------------------------ -->
+          <section class="aboutme text-light section-bg">
+            <h3 class="section-h">About me</h3>
+            <p>
+              Люблю инди-хорроры, ОТЕЛИ, Варкрафт и рисование. Постепенно
+              развиваюсь в веб-разработке. А большего знать и не надо. Хотите
+              узнать больше, поболтайте со мной лол.
+            </p>
+          </section>
+        </div>
+        <!-- ============================================================================================= -->
+        <section class="projects text-light" id="projects">
+          <h3 class="section-h">Мои проекты и сеттинги</h3>
+
+          <!-- <h1 class="section-h">МОИ ПРОЕКТЫ</h1> -->
+          <div class="projects-grid">
+            <!-- отель -->
+            <div class="project" id="project-hotel1316">
+              <div class="project__banner">
+                <img
+                  src="https://f2.toyhou.se/file/f2-toyhou-se/images/101252866_qZqSs7QZHQntOmy.png"
+                  alt="banner1"
+                />
+              </div>
+              <div class="project__head">
+                <h2>УБИЙСТВО В ОТЕЛЕ 1316</h2>
+              </div>
+              <div class="project__about">
+                <p>
+                  После аварии вы по пущей случайности забрели в Отель. Но
+                  мирного отдыха вам не видать, ведь буквально через день вашего
+                  заселения в отеле случается загадочное убийство. Разведайте
+                  случившееся попутно распутывая тайны Отеля и знакомясь с
+                  каждой из его "необычного" персонала.
+                </p>
+              </div>
+              <button class="project__btn btn-hover">
+                <a href=""> ЗАБРОНИРОВАТЬ НОМЕР В ОТЕЛЕ </a>
+              </button>
+            </div>
+
+            <!-- чето другое -->
+            <div class="project" id="project-greengrave">
+              <div class="project__banner">
+                <img
+                  src="https://i.pinimg.com/736x/e9/7f/c7/e97fc7ceddae5471ef4626ccde4c1e0e.jpg"
+                  alt="banner1"
+                />
+              </div>
+              <div class="project__head">
+                <h2>GREEN GRAVE</h2>
+              </div>
+              <div class="project__about">
+                <p>
+                  Войны, загрязнения. Без чистого воздуха люди стали выращивать
+                  растения и помещать их в дыхательные капсулы, прозванные
+                  "зелеными легкими". Однако, растения, желавшие жить не меньше
+                  людей, оказывается начали распространять опасные споры. Не
+                  желающие становиться бездумными зомби, люди пытаются найти
+                  противоядие.
+                </p>
+              </div>
+              <button class="project__btn btn-hover">
+                <a href=""> Найти противоядие </a>
+              </button>
+            </div>
+            <!-- чето другое -->
+            <div class="project" id="project-dmmt">
+              <div class="project__banner">
+                <img
+                  src="https://f2.toyhou.se/file/f2-toyhou-se/images/99716524_KuyzpOEwJQOsMwY.jpg"
+                  alt="banner1"
+                />
+              </div>
+              <div class="project__head">
+                <h2>ДММТ</h2>
+              </div>
+              <div class="project__about">
+                <p>
+                  Общество где жизнь делят люди и гибриды, а пороки и доброта
+                  манифестируются в ангелов и демонов, безмятежно живущих среди
+                  народа.
+                </p>
+              </div>
+              <button class="project__btn btn-hover">
+                <a href="https://toyhou.se/~world/54622.dmmt">Читать </a>
+              </button>
+            </div>
+            <!--  -->
+            <div class="project" id="project-wip">
+              <div class="project__banner">
+                <img src="" alt="banner1" />
+              </div>
+              <div class="project__head">
+                <h2>SOON....</h2>
+              </div>
+              <div class="project__about">
+                <p>work in progress...</p>
+              </div>
+              <button class="project__btn btn-hover">
+                <a href=""> NOT NOW.... </a>
+              </button>
+            </div>
+          </div>
         </section>
-      </div>
-      <!-- ============================================================================================= -->
-      <section class="projects text-light" id="projects">
-        <h3 class="section-h">Мои проекты и сеттинги</h3>
+        <!-- ================================================================================================================================= -->
+        <section class="--hidden mymuses section-bg">
+          <h3 class="section-h">Мои музы мои вдохновители на кого я смотрю</h3>
+          <div class="muse text-light">
+            <h4>DUBUK</h4>
+            <p>
+              Мне очень нравится свободный творческий плодход к своим работам.
+              Неаакуратные, динамичные скетчи, яркие цвета. Люблю когда работки
+              отражают состояние зудожника. Я бы хотела быть ткаойже свободной в
+              рисовании и приходить к такимже оригинальным идеям в дизайне,
+              композиции итд. Очень креативный человек чьему креативу я очень
+              завидую и вдохновляюсь.
+            </p>
+          </div>
+          <div class="muse text-light">
+            <h4>HAKITA</h4>
+            <p>
+              Хакита для меня простой человек но с довольно с нишевыми
+              интересами. Я всегда хотела писать музыку.
+            </p>
+          </div>
+          <div class="muse text-light">
+            <h4>HAKITA</h4>
+            <p>
+              Хакита для меня простой человек но с довольно с нишевыми
+              интересами. Я всегда хотела писать музыку.
+            </p>
+          </div>
+        </section>
+        <!-- ================================================================================================================================= -->
+        <div class="socials">
+          <button class="socials-btn btn-hover">
+            <a href=""
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="m21.936 5.17l-3.03 14.185c-.226.999-.806 1.224-1.644.773l-4.545-3.352l-2.225 2.127c-.225.226-.451.452-.967.452l.355-4.675l8.478-7.704c.354-.355-.097-.484-.548-.193l-10.541 6.64l-4.546-1.386c-.999-.322-.999-1 .226-1.45L20.614 3.72c.87-.258 1.612.194 1.322 1.45"
+                /></svg
+              >TELEGRAM</a
+            >
+          </button>
+          <button class="socials-btn btn-hover">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 640">
+                <path
+                  fill="currentColor"
+                  d="M772 323q65 48 158.5 139.5T1024 576q0 27-15.5 45.5T960 640H854q-30 0-54-25q-60-64-123-123t-101-84v200q0 13-9.5 22.5T544 640H416q-23 0-66.5-35T256 512q-72-83-164-242T0 64q0-35 15.5-49.5T64 0h106q14 0 29.5 12T223 40q2 5 20 42.5t23 47.5l21 42l24.5 46.5L334 256l26 39l24 29V32q0-13 9.5-22.5T416 0h128q13 0 22.5 9.5T576 32v228q102-69 224-235q8-10 23.5-17.5T854 0h106q35 0 49.5 16t14.5 48q0 44-81.5 122.5T772 323z"
+                /></svg
+              >VKONTAKTE</a
+            >
+          </button>
+          <button class="socials-btn btn-hover">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  fill="currentColor"
+                  d="M16.785 17.974a4.729 4.729 0 0 1-1.614.346a1.755 1.755 0 0 1-1.925-1.972v-6.226h4.017V7.095H13.26V2h-2.93a.157.157 0 0 0-.143.15a6.12 6.12 0 0 1-3.935 5.389v2.583h2.024v6.536c0 2.236 1.65 5.415 6.007 5.34a5.337 5.337 0 0 0 3.463-1.17l-.962-2.854"
+                /></svg
+              >TUMBLR</a
+            >
+          </button>
+        </div>
 
-        <!-- <h1 class="section-h">МОИ ПРОЕКТЫ</h1> -->
-        <div class="projects-grid">
-          <!-- отель -->
-          <div class="project" id="project-hotel1316">
-            <div class="project__banner">
-              <img
-                src="https://f2.toyhou.se/file/f2-toyhou-se/images/101252866_qZqSs7QZHQntOmy.png"
-                alt="banner1"
-              />
+        <section class="testsec">
+          <div class="aero-window">
+            <div class="aero-titlebar">
+              <p class="aero-titlebar__title">Не мешайте я играюсь.exe</p>
+              <span class=".aero-titlebar__btns">
+                <button class="aero-titlebar__btn" id="hide">_</button>
+                <button class="aero-titlebar__btn" id="close">X</button>
+              </span>
             </div>
-            <div class="project__head">
-              <h2>УБИЙСТВО В ОТЕЛЕ 1316</h2>
-            </div>
-            <div class="project__about">
+            <div class="aero-workarea">
               <p>
-                После аварии вы по пущей случайности забрели в Отель. Но мирного
-                отдыха вам не видать, ведь буквально через день вашего заселения
-                в отеле случается загадочное убийство. Разведайте случившееся
-                попутно распутывая тайны Отеля и знакомясь с каждой из его
-                "необычного" персонала.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dolorem deleniti adipisci temporibus, nam accusamus deserunt
+                esse labore cum quia inventore dolore ipsum cumque enim? Velit
+                quisquam nisi soluta nostrum ea.
               </p>
             </div>
-            <button class="project__btn btn-hover">
-              <a href=""> ЗАБРОНИРОВАТЬ НОМЕР В ОТЕЛЕ </a>
-            </button>
           </div>
+        </section>
 
-          <!-- чето другое -->
-          <div class="project" id="project-greengrave">
-            <div class="project__banner">
-              <img
-                src="https://i.pinimg.com/736x/e9/7f/c7/e97fc7ceddae5471ef4626ccde4c1e0e.jpg"
-                alt="banner1"
-              />
-            </div>
-            <div class="project__head">
-              <h2>GREEN GRAVE</h2>
-            </div>
-            <div class="project__about">
-              <p>
-                Войны, загрязнения. Без чистого воздуха люди стали выращивать
-                растения и помещать их в дыхательные капсулы, прозванные
-                "зелеными легкими". Однако, растения, желавшие жить не меньше
-                людей, оказывается начали распространять опасные споры. Не
-                желающие становиться бездумными зомби, люди пытаются найти
-                противоядие.
-              </p>
-            </div>
-            <button class="project__btn btn-hover">
-              <a href=""> Найти противоядие </a>
-            </button>
-          </div>
-          <!-- чето другое -->
-          <div class="project" id="project-dmmt">
-            <div class="project__banner">
-              <img
-                src="https://f2.toyhou.se/file/f2-toyhou-se/images/99716524_KuyzpOEwJQOsMwY.jpg"
-                alt="banner1"
-              />
-            </div>
-            <div class="project__head">
-              <h2>ДММТ</h2>
-            </div>
-            <div class="project__about">
-              <p>
-                Общество где жизнь делят люди и гибриды, а пороки и доброта
-                манифестируются в ангелов и демонов, безмятежно живущих среди
-                народа.
-              </p>
-            </div>
-            <button class="project__btn btn-hover">
-              <a href="https://toyhou.se/~world/54622.dmmt">Читать </a>
-            </button>
-          </div>
-          <!--  -->
-          <div class="project" id="project-wip">
-            <div class="project__banner">
-              <img src="" alt="banner1" />
-            </div>
-            <div class="project__head">
-              <h2>SOON....</h2>
-            </div>
-            <div class="project__about">
-              <p>work in progress...</p>
-            </div>
-            <button class="project__btn btn-hover">
-              <a href=""> NOT NOW.... </a>
-            </button>
-          </div>
-        </div>
-      </section>
-      <!-- ================================================================================================================================= -->
-      <section class=" --hidden mymuses section-bg">
-        <h3 class="section-h">Мои музы мои вдохновители на кого я смотрю</h3>
-        <div class="muse text-light">
-          <h4>DUBUK</h4>
-          <p>Мне очень нравится свободный творческий плодход к своим работам. Неаакуратные, динамичные скетчи, яркие цвета. Люблю когда работки отражают состояние зудожника. Я бы хотела быть ткаойже свободной в рисовании и приходить к такимже оригинальным идеям в дизайне, композиции итд. Очень креативный человек чьему креативу я очень завидую и вдохновляюсь.</p>
-        </div>
-        <div class="muse text-light">
-          <h4>HAKITA</h4>
-          <p>Хакита для меня простой человек но с довольно с нишевыми интересами. Я всегда хотела писать музыку.</p>
-        </div>
-         <div class="muse text-light">
-          <h4>HAKITA</h4>
-          <p>Хакита для меня простой человек но с довольно с нишевыми интересами. Я всегда хотела писать музыку.</p>
-        </div>
-      </section>
-      <!-- ================================================================================================================================= -->
-      <div class="socials">
-        <button class="socials-btn btn-hover">
-          <a href=""
-            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="m21.936 5.17l-3.03 14.185c-.226.999-.806 1.224-1.644.773l-4.545-3.352l-2.225 2.127c-.225.226-.451.452-.967.452l.355-4.675l8.478-7.704c.354-.355-.097-.484-.548-.193l-10.541 6.64l-4.546-1.386c-.999-.322-.999-1 .226-1.45L20.614 3.72c.87-.258 1.612.194 1.322 1.45"
-              /></svg
-            >TELEGRAM</a
-          >
-        </button>
-        <button class="socials-btn btn-hover">
-          <a href="">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 640">
-              <path
-                fill="currentColor"
-                d="M772 323q65 48 158.5 139.5T1024 576q0 27-15.5 45.5T960 640H854q-30 0-54-25q-60-64-123-123t-101-84v200q0 13-9.5 22.5T544 640H416q-23 0-66.5-35T256 512q-72-83-164-242T0 64q0-35 15.5-49.5T64 0h106q14 0 29.5 12T223 40q2 5 20 42.5t23 47.5l21 42l24.5 46.5L334 256l26 39l24 29V32q0-13 9.5-22.5T416 0h128q13 0 22.5 9.5T576 32v228q102-69 224-235q8-10 23.5-17.5T854 0h106q35 0 49.5 16t14.5 48q0 44-81.5 122.5T772 323z"
-              /></svg
-            >VKONTAKTE</a
-          >
-        </button>
-        <button class="socials-btn btn-hover">
-          <a href="">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M16.785 17.974a4.729 4.729 0 0 1-1.614.346a1.755 1.755 0 0 1-1.925-1.972v-6.226h4.017V7.095H13.26V2h-2.93a.157.157 0 0 0-.143.15a6.12 6.12 0 0 1-3.935 5.389v2.583h2.024v6.536c0 2.236 1.65 5.415 6.007 5.34a5.337 5.337 0 0 0 3.463-1.17l-.962-2.854"
-              /></svg
-            >TUMBLR</a
-          >
-        </button>
+        <footer class="footer">
+          <a href="https://youtu.be/2_Dtmpe9qaQ"
+            ><img src="./img/clippy.gif" alt="make Clippy your new pfp!"
+          /></a>
+        </footer>
       </div>
-      <footer class="footer">
-        <a href="https://youtu.be/2_Dtmpe9qaQ"
-          ><img src="./img/clippy.gif" alt="make Clippy your new pfp!"
-        /></a>
-      </footer>
     </div>
 
     <script src="script.js"></script>
