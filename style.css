@@ -3,6 +3,17 @@
   src: url(/fonts/vcd_ocd.ttf);
 }
 
+@font-face {
+  font-family: "Impact";
+  src: url(/fonts/Impact.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Courier New";
+  src: url(/fonts/Courier_New.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -116,7 +127,7 @@ body {
 }
 
 /* шапка ================================================================*/
-header .nav-menu {
+/* header .nav-menu {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -140,7 +151,86 @@ header .nav-menu {
 
 .nav-menu .nav-item a {
   color: white;
+
+} */
+
+header .nav-menu {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 20px;
+
+  padding: 10px 0;
+
+  list-style-type: none;
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+
+  /* border: rgb(0, 0, 0) solid 3px;
+  outline: 1px solid rgb(119, 119, 119);
+  background-color: #5e5e66; */
 }
+
+.nav-menu .nav-item {
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+  background: linear-gradient(
+    0deg,
+    rgb(103, 103, 155) 0%,
+    rgb(170, 170, 194) 60%,
+    rgb(103, 103, 155) 100%
+  );
+  border: rgb(153, 153, 153) solid 1px;
+  outline: grey outset 5px;
+
+  
+  transition: all ease-in-out 0.2s;
+  color: #000000;
+}
+
+.nav-item.--btn-down{
+  border: rgb(153, 153, 153) solid 1px;
+  outline: rgb(104, 103, 103) inset 5px;
+
+  background: linear-gradient(
+    0deg,
+    rgb(68, 68, 104) 0%,
+    rgb(101, 101, 119) 60%,
+    rgb(68, 68, 104) 100%
+  );
+  color: rgb(248, 252, 37);
+
+}
+
+/* .nav-menu .nav-item:hover {
+  -webkit-box-shadow: 0px 0px 15px 15px rgba(251, 255, 0, 0.2);
+-moz-box-shadow: 0px 0px 15px 15px rgba(251, 255, 0, 0.2);
+box-shadow: 0px 0px 15px 15px rgba(251, 255, 0, 0.2);
+} */
+
+.nav-menu .divider {
+  display: none;
+}
+
+.nav-menu .nav-item .nav-link {
+  color: rgb(0, 0, 0);
+
+  transition: all ease-in-out 0.2s;
+  padding: 3px 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+    /* border: 1px solid red; */
+    user-select: none;
+}
+
+/* .nav-menu .nav-item:hover a {
+  color: rgb(248, 252, 37);
+} */
 
 /* САЙДБАР ГОВНО ------------------------------------------*/
 
@@ -236,10 +326,46 @@ header .nav-menu {
   justify-content: center;
 }
 .ref__img {
-  animation: float 3s infinite ease-in-out;
+  animation: float 10s infinite ease-in-out;
   height: 100%;
-
   object-fit: contain;
+
+  display: none;
+  /* opacity: 0; */
+}
+
+.--active {
+  display: block !important;
+}
+
+/* .ref__img.--active {
+  display: block !important;
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+.ref__img:not(.--active) {
+  animation: fadeOut 0.4s ease-in-out forwards;
+} */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
 }
 
 .ref-block {
@@ -260,6 +386,8 @@ header .nav-menu {
   transition: all 0.2s ease-in-out;
 
   border-radius: 15px;
+
+  user-select: none;
 }
 
 .price-tag.--hidden {
@@ -318,7 +446,12 @@ header .nav-menu {
 
   border: solid black 2px;
   background-color: white;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, "Courier New", Courier, monospace;
+
+  -webkit-text-stroke: #000000 1.2px;
+
+  color: white;
+  font-size: 1.2rem;
 
   transition: all 0.2s ease-in-out;
 }
@@ -426,7 +559,7 @@ header .nav-menu {
   overflow-wrap: break-word;
 }
 
-.terminal-form{
+.terminal-form {
   display: flex;
   gap: 5px;
   align-items: center;
@@ -442,10 +575,10 @@ header .nav-menu {
   background-color: black;
   color: white;
   /* margin-bottom: auto; */
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier New";
   padding: 1px 10px;
 }
-.terminal-submit{
+.terminal-submit {
   /* flex-grow: 1; */
   background-color: green;
   border-width: 4px;
@@ -453,7 +586,6 @@ header .nav-menu {
   margin-right: auto;
   color: white;
   cursor: pointer;
-
 }
 /* Socials ===================================================== */
 

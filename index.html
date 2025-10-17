@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>COMISSIONS</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>my slime page</title>
   </head>
 
   <body>
@@ -61,7 +62,7 @@
       </div>
       <div class="middle">
         <header class="header">
-          <ul class="nav-menu">
+          <!-- <ul class="nav-menu">
             <li class="nav-item">
               <a href="" class="stub-link">[ОБО МНЕ]</a>
             </li>
@@ -75,51 +76,70 @@
             <li class="nav-item"><a href="#">[ЦЕНЫ]</a></li>
             <li class="divider">\\</li>
             <li class="nav-item"><a href="#projects">[МОИ ПРОЕКТЫ]</a></li>
+          </ul> -->
+          <ul class="nav-menu new">
+            <li class="nav-item">
+              <a href="#aboutme" class="nav-link">[ОБО МНЕ]</a>
+            </li>
+
+            <li class="divider">\\</li>
+
+            <li class="nav-item" >
+              <a href="#ToS" class="nav-link">[условия работы]</a>
+            </li>
+            <li class="divider">\\</li>
+            <li class="nav-item"><a href="#" class="nav-link">[ЦЕНЫ]</a></li>
+            <li class="divider">\\</li>
+            <li class="nav-item"><a href="#projects" class="nav-link">[МОИ ПРОЕКТЫ]</a></li>
           </ul>
         </header>
 
         <div class="content">
           <section class="sitenews text-light">
             <div class="news">
-              <h3>Обновление 22.09.2025г.</h3>
+              <h3>Обновление 16.10.2025г.</h3>
               <p id="latest-news-txt">
                 <li class="news-li">
-                 ЖИВОЙ ТЕРМИНАЛ. ТЕПЕРЬ ОТВЕЧАЕТ на ограниченое количество сообщений! Пока говорит бред но это нормально. Дополню в будущем.
+                  Переделана шапка сайта
                 </li>
-                <li class="news-li">Добавленое ToS</li>
-                <li class="news-li">Малые измнения в стилях <a href="#projects">проектов</a></li>
+                 <li class="news-li">
+                  Новая картинко в прайс-лист
+                </li>
               </p>
             </div>
           </section>
 
           <nav class="prices-nav">
             <button
-              class="prices-nav__btn btn-hover"
-              onclick="setActiveTab(this,sketchPrice)"
+              class="prices-nav__btn sketch-ref-el btn-hover"
+              onclick="setActiveTab(sketchPrice)"
               id="sketchBtn"
             >
               СКЕТЧ
             </button>
-            <button
-              class="prices-nav__btn btn-hover"
+            <!-- <button
+              class="prices-nav__btn sketch-ref-el btn-hover"
               onclick="setActiveTab(this, colorPrice)"
               id="colorBtn"
             >
               ЦВЕТ
-            </button>
+            </button> -->
             <button
-              class="prices-nav__btn btn-hover"
-              onclick="setActiveTab(this, fullshadePrice)"
+              class="prices-nav__btn full-ref-el btn-hover"
+              onclick="setActiveTab(fullshadePrice)"
               id="fullshadeBtn"
             >
-              ФУЛЛШЕЙД
+              РЕНДЕР
             </button>
           </nav>
 
           <div class="pricelist">
             <div class="ref">
               <div class="ref__img-container">
-                <img src="/img/char-0 1.png" alt="" class="ref__img" />
+                <!-- <img src="/img/char-0 1.png" alt="" class="ref__img" /> -->
+                <img src="/img/char-sketch.PNG" alt="" class="ref__img sketch-ref-el" id="sketchPrice-img"/>
+                <img src="/img/char-full.PNG" alt="" class="ref__img full-ref-el" id="fullhPrice-img"/>
+
               </div>
 
               <div class="ref-block">
@@ -129,7 +149,7 @@
               </div>
 
               <div class="ref-block">
-                <div class="price-tag price-tag--left" id="">
+                <div class="price-tag price-tag--left" id="" onclick="">
                   + персонаж<br />+ 100% цены
                 </div>
               </div>
@@ -151,7 +171,7 @@
               </div>
 
               <div class="ref-block">
-                <div class="price-tag price-tag--left" id="">
+                <div class="price-tag price-tag--left" id="bgPrice">
                   ФОН от 0 до 200 р.
                 </div>
               </div>
@@ -162,7 +182,7 @@
                 <div class="price-tag --mobile">
                   + персонаж<br />+ 100% цены
                 </div>
-                <div class="price-tag --mobile">ФОН от 0 до 200 р.</div>
+                <div class="price-tag --mobile" id="bgPrice">ФОН от 0 до 200 р.</div>
               </div>
 
               <div class="donots-window">
@@ -267,7 +287,7 @@
             </form>
           </section>
           <!-- ============================================================================================= -->
-          <section class="ToS text-light section-bg">
+          <section class="ToS text-light section-bg" id="ToS">
             <h3 class="section-h">Terms Of service</h3>
             <ol style="list-style-type: '> '; padding-left: 20px;">
               <li>Оплата после скетча</li>
@@ -286,7 +306,7 @@
             </ol>
           </section>
           <!-- ------------------------------------------ -->
-          <section class="aboutme text-light section-bg">
+          <section class="aboutme text-light section-bg" id="aboutme">
             <h3 class="section-h">About me</h3>
             <p>
               Люблю инди-хорроры, ОТЕЛИ, Варкрафт и рисование. Постепенно
@@ -396,7 +416,7 @@
           <div class="muse text-light">
             <h4>DUBUK</h4>
             <p>
-              Мне очень нравится свободный творческий плодход к своим работам.
+              Мне очень нравится его свободный творческий плодход к своим работам.
               Неаакуратные, динамичные скетчи, яркие цвета. Люблю когда работки
               отражают состояние зудожника. Я бы хотела быть ткаойже свободной в
               рисовании и приходить к такимже оригинальным идеям в дизайне,
